@@ -1,7 +1,7 @@
 .button{
     text-align: center;
     position: relative;
-    top: 22%;
+    top: 5%;
   }
   .button:hover{
     -webkit-text-stroke: 1px;

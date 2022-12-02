@@ -1,25 +1,24 @@
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import * as React from 'react';
-import Card from '@mui/material/Card';
-import Stack from '@mui/material/Stack'
+import {FaLinkedin} from "react-icons/fa"
+import Card from '@mui/material/Card';  
+import Button from '@mui/material/Button';
+import {IconContext} from "react-icons"
+import '../css/about.css'
 import CardHeader from '@mui/material/CardHeader';
 import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 
+
 function About() {
   return (
-      <>
-      <Navbar/>
-      <Stack
-          direction="row"
-          justifyContent="space-evenly"
-          alignItems="center"
-          spacing={4}
-        >      
+      <div className='ab'>
+      <Navbar/>  
+      <div>
       <div className='1'>
-      <Card sx={{ maxWidth: 345 }}>
+      <Card padding-top="20px"sx={{ maxWidth: 345 }}>
         <CardHeader
           title="Rohith Venkata Sai"
           subheader="KL CSE(H)"
@@ -34,6 +33,9 @@ function About() {
           <Typography variant="body2" color="text.primary">
             I am a 2nd Year Student.
           </Typography>
+          <IconContext.Provider value={{ style: {fontSize: '30px', color: "rgb(0, 123, 255)"}}}>
+            <Button href='https://www.linkedin.com/in/rohith-k-13063324b/'><FaLinkedin/></Button>
+          </IconContext.Provider>
         </CardContent>
       </Card>
       </div>
@@ -53,6 +55,9 @@ function About() {
           <Typography variant="body2" color="text.primary">
           I am a 2nd Year Student.
           </Typography>
+          <IconContext.Provider value={{ style: {fontSize: '30px', color: "rgb(0, 123, 255)"}}}>
+            <Button href='https://www.linkedin.com/in/bhanu-nimmala-b725a7244/'><FaLinkedin/></Button>
+          </IconContext.Provider>
         </CardContent>
       </Card>
       </div>
@@ -72,12 +77,15 @@ function About() {
           <Typography variant="body2" color="text.primary">
           I am a 2nd Year Student.
           </Typography>
+          <IconContext.Provider value={{ style: {fontSize: '30px', color: "rgb(0, 123, 255)"}}}>
+            <Button href='https://www.linkedin.com/in/koushik-sarma-474191226/'><FaLinkedin/></Button>
+          </IconContext.Provider>
         </CardContent>
       </Card>
       </div>
-      </Stack>
+      </div>
       <Footer/>
-      </>
+      </div>
   );
 }
 
