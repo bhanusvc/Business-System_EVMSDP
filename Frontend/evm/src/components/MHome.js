@@ -3,7 +3,7 @@ import Button from '@mui/material/Button';
 import { Typography } from '@mui/material'
 import ImageSlider from '../pages/ImageSlider'
 import Navbar from './Navbar'
-import '../css/home.css'
+import '../css/mhome.css'
 import Footer from './Footer';
 
 const MHome = () => {

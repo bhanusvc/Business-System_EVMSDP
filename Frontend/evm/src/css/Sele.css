@@ -1,6 +1,17 @@
-.ACM{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+.ACMbody{
+    background-image:url(bk.jpg);
+    backface-visibility: visible;
+    height: 710px;
 }
+
+.Buttons{
+    color: rgb(84, 218, 255);
+  text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 25px rgb(194, 100, 199), 0 0 5px rgb(222, 206, 104);
+    position: relative;
+    top: 200px;
+    justify-content: center;
+    flex-direction: row;
+    
+}
+
 

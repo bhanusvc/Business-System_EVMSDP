@@ -12,7 +12,7 @@ function Home() {
       </div>
       <div className="button">
         
-      <Button href="/Selection1"variant="contained" style={{position:'relative',top:'50px',fontFamily:'Bahnschrift'}}>Get Started</Button>
+      <Button href="/Selection1"variant="contained" size='large' style={{fontFamily:'Bahnschrift'}}>Get Started</Button>
         </div>
     </div>
     </>

@@ -1,10 +1,13 @@
 .button{
     text-align: center;
+    position: relative;
+    top: 22%;
   }
   .button:hover{
     -webkit-text-stroke: 1px;
-    color: transparent;
+    color:transparent;
     transition: 0.5s;
+  
   }
 .Home{
     background-image: url("https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg?auto=compress&cs=tinysrgb&w=600");
@@ -17,6 +20,9 @@
   }
   .Home h1{
     color: #fff;
+    text-align: center;
+    position: relative;
+    top: 50%;
   }
 .Home h1:hover{
   -webkit-text-stroke: 1px #fff;
@@ -26,6 +32,7 @@
 .Home h5{
   color: #fff;
   font-style:italic;
+  text-align: center;
 }
 .Home h5:hover{
   -webkit-text-stroke: 1px #fff;
