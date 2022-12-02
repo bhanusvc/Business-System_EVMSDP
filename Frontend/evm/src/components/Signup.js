@@ -1,163 +1,94 @@
-import * as React from 'react';
-import Avatar from '@mui/material/Avatar';
-import Button from '@mui/material/Button';
-import CssBaseline from '@mui/material/CssBaseline';
-import TextField from '@mui/material/TextField';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import Checkbox from '@mui/material/Checkbox';
-import Link from '@mui/material/Link';
-import Grid from '@mui/material/Grid';
-import Box from '@mui/material/Box';
-import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
-import Typography from '@mui/material/Typography';
-import Container from '@mui/material/Container';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
-import { useState} from 'react';
-import axios from 'axios';
-function Copyright(props) {
-  return (
-    <Typography variant="body2" color="text.secondary" align="center" {...props}>
-      {'Copyright © '}
-      <Link color="inherit" href="https://mui.com/">
-        Your Website
-      </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
-    </Typography>
-  );
-}
+import React, { Component } from "react";
 
-const theme = createTheme();
-
-export default function SignUp() {
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    const data = new FormData(event.currentTarget);
-    console.log({
-      email: data.get('email'),
-      password: data.get('password'),
-    });
-  };
-
-  const [AdminfristName, setfristname] = useState("");
-  const [AdminlastName, setlastname] = useState("");
-  const[contactno,setcontactno]=useState(0);
-  const[email,setemail]=useState("");
-  const[AdminPassword,setPassword]=useState("")
-  
-  const addToList = () => {
-    axios.post("/newAdmin", { AdminfristName:AdminfristName, AdminlastName:AdminlastName,contactno:contactno,email:email,AdminPassword:AdminPassword });
-      
+export default class SignUp extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      fname: "",
+      lname: "",
+      email: "",
+      password: "",
+    };
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
+  handleSubmit(e) {
+    e.preventDefault();
+    const { fname, lname, email, password } = this.state;
+    console.log(fname, lname, email, password);
+    fetch("http://localhost:5000/register", {
+      method: "POST",
+      crossDomain: true,
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+        "Access-Control-Allow-Origin": "*",
+      },
+      body: JSON.stringify({
+        fname,
+        email,
+        lname,
+        password,
+      }),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data, "userRegister");
+      });
+  }
+  render() {
+    return (
+      <form onSubmit={this.handleSubmit}>
+        <h3>Sign Up</h3>
 
+        <div className="mb-3">
+          <label>First name</label>
+          <input
+            type="text"
+            className="form-control"
+            placeholder="First name"
+            onChange={(e) => this.setState({ fname: e.target.value })}
+          />
+        </div>
 
+        <div className="mb-3">
+          <label>Last name</label>
+          <input
+            type="text"
+            className="form-control"
+            placeholder="Last name"
+            onChange={(e) => this.setState({ lname: e.target.value })}
+          />
+        </div>
 
+        <div className="mb-3">
+          <label>Email address</label>
+          <input
+            type="email"
+            className="form-control"
+            placeholder="Enter email"
+            onChange={(e) => this.setState({ email: e.target.value })}
+          />
+        </div>
 
-  return (
-    <ThemeProvider theme={theme}>
-      <Container component="main" maxWidth="xs">
-        <CssBaseline />
-        <Box
-          sx={{
-            marginTop: 8,
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-          }}
-        >
-          <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
-            <LockOutlinedIcon />
-          </Avatar>
-          <Typography component="h1" variant="h5">
-            Sign up
-          </Typography>
-          <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 3 }}>
-            <Grid container spacing={2}>
-              <Grid item xs={12} sm={6}>
-                <TextField
-                  autoComplete="given-name"
-                  name="firstName"
-                  required
-                  fullWidth
-                  id="firstName"
-                  label="First Name"
-                  autoFocus
-                 onChange={(event)=> setfristname(event.target.value)}
-                />
-              </Grid>
-              <Grid item xs={12} sm={6}>
-                <TextField
-                  required
-                  fullWidth
-                  id="lastName"
-                  label="Last Name"
-                  name="lastName"
-                  autoComplete="family-name"
-                  onChange={(event)=> setlastname(event.target.value)}
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <TextField
-                  required
-                  fullWidth
-                  id="email"
-                  label="Email Address"
-                  name="email"
-                  autoComplete="email"
-                  onChange={(event)=> setemail(event.target.value)}
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <TextField
-                  required
-                  fullWidth
-                  name="password"
-                  label="Password"
-                  type="password"
-                  id="password"
-                  autoComplete="new-password"
-                  onChange={(event)=> setPassword(event.target.value)}
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <TextField
-                  required
-                  fullWidth
-                  id="email"
-                  label="Contact no"
-                  name="contact"
-                  autoComplete="contactno"
-                  onChange={(event)=> setcontactno(event.target.value)}
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <FormControlLabel
-                  control={<Checkbox value="allowExtraEmails" color="primary" />}
-                  label="I want to receive inspiration, marketing promotions and updates via email."
-                />
-              </Grid>
-            </Grid>
-            <Button
-              type="submit"
-              fullWidth
-              variant="contained"
-              sx={{ mt: 3, mb: 2 }}
-              href="/Login"
-              onClick={addToList}
-            >
-              Sign Up
-            </Button>
-            <Grid container justifyContent="flex-end">
-              <Grid item>
-                <Link href="/Login" variant="body2">
-                  Already have an account? Sign in
-                </Link>
-              </Grid>
-            </Grid>
-          </Box>
-        </Box>
-        <Copyright sx={{ mt: 5 }} />
-      </Container>
-    </ThemeProvider>
-  );
+        <div className="mb-3">
+          <label>Password</label>
+          <input
+            type="password"
+            className="form-control"
+            placeholder="Enter password"
+            onChange={(e) => this.setState({ password: e.target.value })}
+          />
+        </div>
+
+        <div className="d-grid">
+          <button type="submit" className="btn btn-primary">
+            Sign Up
+          </button>
+        </div>
+        <p className="forgot-password text-right">
+          Already registered ?<a href="/Login">Log In</a>
+        </p>
+      </form>
+    );
+  }
 }

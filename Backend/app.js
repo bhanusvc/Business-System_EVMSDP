@@ -29,7 +29,7 @@ mongoose
 require("./models/userDetails");
 
 const User = mongoose.model("UserInfo");
-app.post("/register", async (req, res) => {
+app.post("/Signup", async (req, res) => {
   const { fname, lname, email, password } = req.body;
 
   const encryptedPassword = await bcrypt.hash(password, 10);
@@ -51,7 +51,7 @@ app.post("/register", async (req, res) => {
   }
 });
 
-app.post("/login-user", async (req, res) => {
+app.post("/Login", async (req, res) => {
   const { email, password } = req.body;
 
   const user = await User.findOne({ email });
@@ -67,7 +67,7 @@ app.post("/login-user", async (req, res) => {
       return res.json({ error: "error" });
     }
   }
-  res.json({ status: "error", error: "InvAlid Password" });
+  res.json({ status: "error", error: "Invalid Password" });
 });
 
 app.post("/userData", async (req, res) => {
@@ -91,7 +91,7 @@ app.listen(5000, () => {
   console.log("Server Started");
 });
 
-app.post("/forgot-password", async (req, res) => {
+app.post("/Forgotpassword", async (req, res) => {
   const { email } = req.body;
   try {
     const oldUser = await User.findOne({ email });

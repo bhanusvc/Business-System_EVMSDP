@@ -7,14 +7,14 @@
 }
 
 
-.Nav1 li,a,button {
+.Nav1 li, a, button {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
     color: #edf0f1;
     text-decoration: none;
 }
-header{
+.Nav1 header{
     display: flex;
     justify-content: space-between;
     align-items: center;

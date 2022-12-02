@@ -29,7 +29,6 @@ function App() {
             <Route path="/" element={<Home/>}></Route>
             <Route path="/Login" element={<Login/>}></Route>
             <Route path="/Signup" element={<SignUp/>}></Route>
-            <Route path="/Logout" element={<Login/>}></Route>
             <Route path="/Navbar" element={<Navbar/>}></Route>
             <Route path="/mhome" element={<MHome/>}></Route>
             <Route path="/Forgotpassword" element={<Forgot/>}></Route>

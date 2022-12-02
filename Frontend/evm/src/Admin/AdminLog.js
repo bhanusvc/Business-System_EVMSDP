@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import '../index.css'
+import '../css/login.css'
+import { Button } from "@mui/material";
 export default class Login extends Component {
   constructor(props) {
     super(props);
@@ -39,7 +40,9 @@ export default class Login extends Component {
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
-        <h3>Sign In</h3>
+        <div className="bg"></div>
+        <div className="log">
+        <h2>Sign In</h2>
 
         <div className="mb-3">
           <label>Email address</label>
@@ -51,7 +54,7 @@ export default class Login extends Component {
           />
         </div>
 
-        <div className="mb-3">
+        <div className="mb-4">
           <label>Password</label>
           <input
             type="password"
@@ -61,24 +64,12 @@ export default class Login extends Component {
           />
         </div>
 
-        <div className="mb-3">
-          <div className="custom-control custom-checkbox">
-            <input
-              type="checkbox"
-              className="custom-control-input"
-              id="customCheck1"
-            />
-            <label className="custom-control-label" htmlFor="customCheck1">
-              Remember me
-            </label>
-          </div>
-        </div>
-
-        <div className="d-grid">
-          <button type="submit" className="btn btn-primary">
+          <Button type="submit" variant="contained"  className="btn">
             Submit
-          </button>
+          </Button>
+       
         </div>
+        
       </form>
     );
   }
