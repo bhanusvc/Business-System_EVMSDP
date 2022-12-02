@@ -1,23 +1,52 @@
-import Start from './components/Start';
-import Second from './components/Second'
-import Home from './components/Home'
-
-
-import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import './App.css'
+import Home from './components/Home';
+import Login from './components/Login';
+import {BrowserRouter, Route ,Routes} from 'react-router-dom'
+import Navbar from './components/Navbar';
+import MHome from './components/MHome';
+import SignUp from './components/Signup';
+import Events from './pages/Events';
+import Parties from './pages/Parties';
+import Celebrations from './pages/Celebrations';
+import Ceremonies from './pages/Ceremonies'
+import BusinessEvents from './pages/BusinessEvents';
+import Contact from './pages/Contact';
+import About from './pages/About';
+import Info from './pages/Info';
+import Forgot from './pages/Forgot';
+import AdminLog from './Admin/AdminLog'
+import EMSignup from './EP/EMSignup'
+import EMLogin from './EP/EMLogin'
+import Selection1 from './components/Selection1';
 function App() {
   return (
     <>
-    
-    <div>
+      <div className="App">
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Start/>}></Route>
-          <Route path="/choice" element={<Second/>}></Route>
-          <Route path="/home" element={<Home/>}></Route>
-        </Routes>
-      </BrowserRouter>
-    </div>
+          <Routes>
+            <Route path="/" element={<Home/>}></Route>
+            <Route path="/Login" element={<Login/>}></Route>
+            <Route path="/Signup" element={<SignUp/>}></Route>
+            <Route path="/Navbar" element={<Navbar/>}></Route>
+            <Route path="/mhome" element={<MHome/>}></Route>
+            <Route path="/Forgotpassword" element={<Forgot/>}></Route>
+            <Route path="/Events" element={<Events/>}></Route>
+            <Route path="/Contact" element={<Contact/>}></Route>
+            <Route path="/AboutUs" element={<About/>}></Route>
+            <Route path="/Parties" element={<Parties/>}></Route>
+            <Route path="/Celebrations" element={<Celebrations/>}></Route>
+            <Route path="/Ceremonies" element={<Ceremonies/>}></Route>
+            <Route path="/BusinessEvents" element={<BusinessEvents/>}></Route>
+            <Route path="/info" element={<Info/>}></Route>
+            <Route path="/Selection1" element={<Selection1/>}></Route>
+            <Route path="/AdminLogin" element={<AdminLog/>}></Route>
+            <Route path="/EMLogin" element={<EMLogin/>}></Route>
+            <Route path="/EMSignup" element={<EMSignup/>}></Route>
+          </Routes>
+        </BrowserRouter>
+      </div>
     </>
+    
   );
 }
 

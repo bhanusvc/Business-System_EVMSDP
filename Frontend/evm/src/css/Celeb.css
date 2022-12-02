@@ -1,0 +1,28 @@
+.first:hover{
+    transform: scale(1.1) translateY(-1.15px);
+    transition: 0.8s;
+}
+.second:hover{
+    transform: scale(1.1) translateY(-1.15px);
+    transition: 0.8s;
+}
+.third:hover{
+    transform: scale(1.1) translateY(-1.15px);
+    transition: 0.8s;
+}
+.fourth:hover{
+    transform: scale(1.1) translateY(-1.15px);
+    transition: 0.8s;
+}
+.fifth:hover{
+    transform: scale(1.1) translateY(-1.15px);
+    transition: 0.8s;
+}
+.sixth:hover{
+    transform: scale(1.1) translateY(-1.15px);
+    transition: 0.8s;
+}
+.cel{
+    background: rgb(68,119,255);
+background: linear-gradient(90deg, rgba(68,119,255,1) 5%, rgba(255,255,255,1) 33%, rgba(246,244,246,1) 50%, rgba(255,255,255,1) 67%, rgba(245,74,221,1) 95%);
+}

@@ -1,0 +1,40 @@
+.first:hover{
+    transform: scale(1.1) translateY(-1.15px);
+    transition: 0.8s;
+}
+.second:hover{
+    transform: scale(1.1) translateY(-1.15px);
+    transition: 0.8s;
+}
+.third:hover{
+    transform: scale(1.1) translateY(-1.15px);
+    transition: 0.8s;
+}
+.fourth:hover{
+    transform: scale(1.1) translateY(-1.15px);
+    transition: 0.8s;
+}
+.fifth:hover{
+    transform: scale(1.1) translateY(-1.15px);
+    transition: 0.8s;
+}
+.sixth:hover{
+    transform: scale(1.1) translateY(-1.15px);
+    transition: 0.8s;
+}
+.seventh:hover{
+    transform: scale(1.1) translateY(-1.15px);
+    transition: 0.8s;
+}
+.eighth:hover{
+    transform: scale(1.1) translateY(-1.15px);
+    transition: 0.8s;
+}
+.ninth:hover{
+    transform: scale(1.1) translateY(-1.15px);
+    transition: 0.8s;
+}
+.pa{
+    background: rgb(94,255,118);
+background: linear-gradient(90deg, rgba(94,255,118,1) 5%, rgba(255,255,255,1) 33%, rgba(246,244,246,1) 50%, rgba(255,255,255,1) 67%, rgba(74,233,245,1) 95%);
+}
