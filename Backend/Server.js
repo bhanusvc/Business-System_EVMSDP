@@ -14,7 +14,7 @@ app.get("/about", (req,res)=>{
     res.json('Bhanu')
 })
 
-app.post('/add',async (req,res)=>{
+app.post('/addAdmin',async (req,res)=>{
     const {email, password} = req.body
     try{
         const admin = await Admin.create({email, password})
