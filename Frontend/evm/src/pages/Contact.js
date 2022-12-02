@@ -14,7 +14,7 @@ function Contact() {
         <h3>Connect With us through Whatsapp</h3>
         
           <br></br>
-        <Button href="https://wa.me/+918247306195" target="_blank" rel="noreferrer" variant='contained'>
+        <Button href="https://wa.me/+916300741007" target="_blank" rel="noreferrer" variant='contained'>
               Chat with us !</Button>
       
       <br></br>

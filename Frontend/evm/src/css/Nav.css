@@ -1,3 +1,61 @@
-.nav{
-    z-index: 10000;
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
+
+.Nav1 {
+    box-sizing: border-box;
+    background-color: #24252a;
+    height: 100px;
+}
+
+
+.Nav1 li,a,button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.logo{
+    cursor: pointer;
+}
+
+
+.nav__links{
+    
+    list-style: none;
+}
+
+.nav__links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__links li a{
+    transition: all 0.3 ease 0s;
+}
+
+.nav__links li a:hover{
+    color:#0088a9
+}
+
+.Nav1 button{
+    padding: 9px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.Nav1 button:hover{
+    background-color: rgba(0,136,169,1);
+}
+.cta{
+    background-color:  rgba(0,136,169,0.8);
 }
