@@ -18,7 +18,8 @@ import AdminLog from './Admin/AdminLog'
 import EMSignup from './EP/EMSignup'
 import EMLogin from './EP/EMLogin'
 import Selection1 from './components/Selection1';
-import Dashboard from './Admin/Dashboard';
+import AdDashboard from './Admin/AdDashboard';
+import EPDashboard from './EP/EPDashboard';
 function App() {
   return (
     <>
@@ -43,7 +44,8 @@ function App() {
             <Route path="/AdminLogin" element={<AdminLog/>}></Route>
             <Route path="/EMLogin" element={<EMLogin/>}></Route>
             <Route path="/EMSignup" element={<EMSignup/>}></Route>
-            <Route path="/dashboard" element={<Dashboard/>}></Route>
+            <Route path="/AdDashboard" element={<AdDashboard/>}></Route>
+            <Route path="/EPDashboard" element={<EPDashboard/>}></Route>
           </Routes>
         </BrowserRouter>
       </div>
