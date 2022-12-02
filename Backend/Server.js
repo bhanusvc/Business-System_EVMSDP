@@ -15,9 +15,9 @@ app.get("/about", (req,res)=>{
 })
 
 app.post('/add',async (req,res)=>{
-    const {name, email, age} = req.body
+    const {email, password} = req.body
     try{
-        const admin = await Admin.create({name, email, age})
+        const admin = await Admin.create({email, password})
         res.status(200).json(admin)
     }catch(error){
         res.status(400).json({error: error.message})
