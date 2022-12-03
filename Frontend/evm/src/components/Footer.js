@@ -10,13 +10,13 @@ function Footer() {
     <u><Button href="/Contact" sx={{color:'white',fontFamily:'Bahnschrift'}}>Contact</Button></u>
     &nbsp;
     <u><Button href="/AboutUs"  sx={{color:'white',fontFamily:'Bahnschrift'}}>About Us</Button></u>
-        <hr />
-        <div className="row">
+    <hr/>
+       
           <p className="col-sm">
-            &copy;{new Date().getFullYear()} EVM | All rights reserved.
+            &copy;{new Date().getFullYear()} EventZ | All Rights Reserved.
           </p>
         </div>
-    </div>
+    
   );
 }
 

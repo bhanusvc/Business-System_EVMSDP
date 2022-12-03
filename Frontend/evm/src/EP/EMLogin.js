@@ -1,6 +1,7 @@
 import React, { Component } from "react";
+import '../css/login.css'
 import '../index.css'
-import { Button } from "@mui/material";
+import Button from '@mui/material/Button';
 export default class Login extends Component {
   constructor(props) {
     super(props);
@@ -30,29 +31,34 @@ export default class Login extends Component {
       .then((res) => res.json())
       .then((data) => {
         console.log(data, "userRegister");
-        if (data.status === "ok") {
+        if (data.status == "ok") {
           alert("login successful");
           window.localStorage.setItem("token", data.data);
-          window.location.href = "/mhome";
+          window.location.href = "/mslider";
+        }
+        else
+        {
+          alert("Enter Valid Credentials")
         }
       });
   }
   render() {
     return (
+      <div className="lo">
       <form onSubmit={this.handleSubmit}>
-        <h3>Sign In</h3>
+        <h3>Log In</h3>
 
-        <div className="mb-3">
-          <label>Email address</label>
+        <div className="em">
+          <label>Email</label>
           <input
             type="email"
-            className="form-control"
+            className="form-control" 
             placeholder="Enter email"
             onChange={(e) => this.setState({ email: e.target.value })}
           />
         </div>
 
-        <div className="mb-3">
+        <div className="pas">
           <label>Password</label>
           <input
             type="password"
@@ -61,19 +67,17 @@ export default class Login extends Component {
             onChange={(e) => this.setState({ password: e.target.value })}
           />
         </div>
-
-        
-
-        <div >
-          <Button type="submit" variant="contained" className="btn btn-primary">
+        <div className="bu">
+       
+          <button type="submit" className="btn btn-primary">
             Submit
-          </Button>
-          <br/>
-        <br/>
-          <Button variant="contained" fontSize="small" href="/EMSignup">Sign Up</Button>
-        
+          </button>
         </div>
+        <p className="forgot-password text-right">
+          <Button><a href="/Signup">Sign Up</a></Button>
+        </p>
       </form>
-    );
-  }
+      </div>
+  );
+  }
 }
