@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import '../css/login.css'
+import './login.css'
 import { Button } from "@mui/material";
 export default class Login extends Component {
   constructor(props) {
@@ -33,15 +33,14 @@ export default class Login extends Component {
         if (data.status === "ok") {
           alert("login successful");
           window.localStorage.setItem("token", data.data);
-          window.location.href = "/AdDashboard";
+          window.location.href = "/mhome";
         }
       });
   }
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
-        <div className="bg"></div>
-        <div className="log">
+        
         <h2>Sign In</h2>
 
         <div className="mb-3">
@@ -54,7 +53,7 @@ export default class Login extends Component {
           />
         </div>
 
-        <div className="mb-4">
+        <div className="mb-3">
           <label>Password</label>
           <input
             type="password"
@@ -63,14 +62,13 @@ export default class Login extends Component {
             onChange={(e) => this.setState({ password: e.target.value })}
           />
         </div>
-
+        <div>
           <Button type="submit" variant="contained"  className="btn">
             Submit
           </Button>
-       
-        </div>
-        
+          </div>  
       </form>
-    );
-  }
+    );
+    }
+
 }

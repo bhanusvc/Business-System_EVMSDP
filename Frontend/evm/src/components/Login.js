@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import '../css/login.css'
+import '../Admin/login.css'
 import { Button } from "@mui/material";
 export default class Login extends Component {
   constructor(props) {
@@ -71,6 +71,6 @@ export default class Login extends Component {
         
         </div>
       </form>
-    );
-  }
+);
+}
 }

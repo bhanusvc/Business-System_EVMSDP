@@ -5,16 +5,16 @@ import React from 'react'
 function Home() {
   return (
     <>
-    <div className="Home">
-      <div>
-          <h1  style={{fontFamily:'Candara', fontSize:'80px',charSet:'utf-8'}} >Event Management System </h1>
-          <h5 style={{fontFamily:'Lucida Fax', fontSize:'25px'}}>Everything at your Fingertips</h5>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h3 class="animate-charcter"> EventZ by RBK</h3>
+        </div>
       </div>
-      <div className="button">
-        
+    </div>
+        <div>
       <Button href="/Selection1"variant="contained" size='large' style={{fontFamily:'Bahnschrift'}}>Get Started</Button>
         </div>
-    </div>
     </>
   )
 }

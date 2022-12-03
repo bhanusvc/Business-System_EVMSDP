@@ -1,0 +1,38 @@
+.bg{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+   background: url('https://images.unsplash.com/photo-1432821596592-e2c18b78144f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bG9naW58ZW58MHx8MHx8&w=1000&q=80');
+   background-size: cover;
+
+}
+ .log{
+    display: block;
+    background-color: rgba(255, 255, 255, 0.505);
+    position: absolute;
+    top: 180px;
+    left: 35%;
+    height: 350px;
+    width: 550px;
+ }
+ input{
+     background: transparent;
+     width: 200px;
+     padding: 10px;
+     margin: 10px;
+ }
+ label{
+     font-size: large;
+ }
+ .mb-3{
+     margin: 15px;
+ }
+ .mb-4{
+     position: relative;
+     left: 15px;
+ }
+ .btn{
+     position: relative;
+    top: 25px;
+ }

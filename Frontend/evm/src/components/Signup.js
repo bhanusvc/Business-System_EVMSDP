@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-
+import '../css/signup.css'
+import { Button } from "@mui/material";
 export default class SignUp extends Component {
   constructor(props) {
     super(props);
@@ -37,6 +38,7 @@ export default class SignUp extends Component {
   }
   render() {
     return (
+      <div className="si">
       <form onSubmit={this.handleSubmit}>
         <h3>Sign Up</h3>
 
@@ -81,14 +83,15 @@ export default class SignUp extends Component {
         </div>
 
         <div className="d-grid">
-          <button type="submit" className="btn btn-primary">
+          <Button type="submit" className="btn btn-primary" variant="filled">
             Sign Up
-          </button>
+          </Button>
         </div>
         <p className="forgot-password text-right">
-          Already registered ?<a href="/Login">Log In</a>
+          Already registered ?<a href="/Login" >Log In</a>
         </p>
       </form>
+      </div>
     );
   }
 }

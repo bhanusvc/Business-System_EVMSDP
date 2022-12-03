@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import '../index.css'
+import { Button } from "@mui/material";
+import './login.css'
 export default class Login extends Component {
   constructor(props) {
     super(props);
@@ -32,7 +34,7 @@ export default class Login extends Component {
         if (data.status === "ok") {
           alert("login successful");
           window.localStorage.setItem("token", data.data);
-          window.location.href = "/EPDashboard";
+          window.location.href = "/mhome";
         }
       });
   }
@@ -63,14 +65,15 @@ export default class Login extends Component {
 
         
 
-        <div className="d-grid">
-          <button type="submit" className="btn btn-primary">
+        <div >
+          <Button type="submit" variant="contained" className="btn btn-primary">
             Submit
-          </button>
+          </Button>
+          <br/>
+        <br/>
+          <Button variant="contained" fontSize="small" href="/EMSignup">Sign Up</Button>
+        
         </div>
-        <p className="forgot-password text-right">
-          <a href="/EMSignup">Sign Up</a>
-        </p>
       </form>
     );
   }

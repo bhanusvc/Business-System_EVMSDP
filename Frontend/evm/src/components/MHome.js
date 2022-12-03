@@ -26,7 +26,7 @@ const MHome = () => {
     </div>
     <br></br>
     <div className='mar'>
-      <h3 style={{fontFamily : 'Agency FB',color:'black' ,height:'79px',fontSize:'55px' }}><marquee>Diwali Offer : 20% off on Bookings</marquee></h3>
+      <h3 style={{fontFamily : 'Agency FB',color:'black' ,height:'79px',fontSize:'55px' }}><marquee>Christmas Offer : 20% off on Bookings</marquee></h3>
     </div>
     <div style={containerStyles}>
         <ImageSlider slides={slides} />
