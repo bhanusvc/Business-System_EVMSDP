@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import '../css/signup.css'
+
 export default class SignUp extends Component {
   constructor(props) {
     super(props);
@@ -38,8 +38,7 @@ export default class SignUp extends Component {
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
-        <div className="bhanu">
-          <div className="container">
+        
         <h3>Sign Up</h3>
 
         <div className="mb-3">
@@ -91,8 +90,7 @@ export default class SignUp extends Component {
         <p id="v" className="forgot-password text-right">
           Already registered <a href="/Login">sign in?</a>
         </p>
-        </div>
-        </div>
+        
       </form>
       
     );

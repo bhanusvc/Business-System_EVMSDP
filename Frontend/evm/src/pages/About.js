@@ -34,6 +34,7 @@ function About() {
           <Typography variant="body2" color="text.primary">
             I am a 2nd Year Student.
           </Typography>
+          <br/><br/>
           <IconContext.Provider value={{ style: {fontSize: '30px', color: "rgb(0, 123, 255)"}}}>
             <Button href='https://www.linkedin.com/in/rohith-k-13063324b/ ' target="_blank"><FaLinkedin/></Button>
           </IconContext.Provider>
@@ -57,6 +58,7 @@ function About() {
           <Typography variant="body2" color="text.primary">
           I am a 2nd Year Student.
           </Typography>
+          <br/><br/>
           <IconContext.Provider value={{ style: {fontSize: '30px', color: "rgb(0, 123, 255)"}}}>
             <Button href='https://www.linkedin.com/in/bhanu-nimmala-b725a7244/' target="_blank"><FaLinkedin/></Button>
           </IconContext.Provider>
@@ -80,6 +82,7 @@ function About() {
           <Typography variant="body2" color="text.primary">
           I am a 2nd Year Student.
           </Typography>
+          <br/><br/>
           <IconContext.Provider value={{ style: {fontSize: '30px', color: "rgb(0, 123, 255)"}}}>
             <Button href='https://www.linkedin.com/in/koushik-sarma-474191226/' target="_blank"><FaLinkedin/></Button>
           </IconContext.Provider>

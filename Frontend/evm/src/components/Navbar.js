@@ -7,12 +7,13 @@ function Navbar() {
      
     <body>
         <header>
-            <a class="logo" href="/mhome"><EventAvailableTwoToneIcon fontSize='large'></EventAvailableTwoToneIcon></a>
+            <a class="logo" href="/mslider"><EventAvailableTwoToneIcon fontSize='large'></EventAvailableTwoToneIcon></a>
             <nav>
                 <ul class="nav__links">
                     <li><a href="/Events">Events</a></li>
                     <li><a href="/AboutUs">About Us</a></li>
                     <li><a href="/Contact">Contact</a></li>
+                    <li><a href="https://forms.office.com/r/qmsDGmJ0vg?embed=true"  target="_blank" rel="noreferrer">Feedback</a></li>
                 </ul>
             </nav>
             <button><a class="cta" href="/Login">Log Out</a></button>

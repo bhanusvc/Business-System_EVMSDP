@@ -37,7 +37,7 @@ function Events() {
                 <Typography gutterBottom variant="h5" component="div" sx={{fontFamily:'cursive'}}>
                 <b>Ceremonies</b>
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography variant="body" color="text.secondary">
                 Plan your ceremonies in a unified ritualistic way with us. 
                 Explore more 
                 </Typography>
@@ -66,7 +66,7 @@ function Events() {
                 <Typography gutterBottom variant="h5" component="div" sx={{fontFamily:'cursive'}}>
                     <b>Parties</b>
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography variant="body" color="text.secondary">
                 Plan your social gathering of invited guests with refreshments like food and beverages
                 and Events with entertainment.
                 </Typography>
@@ -94,7 +94,7 @@ function Events() {
                 <Typography gutterBottom variant="h5" component="div"  sx={{fontFamily:'cursive'}}>
                     <b>Celebrations</b>
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography variant="body" color="text.secondary">
                     Plan your Celebrations to celebrate with your friends and family.
                 </Typography>
                 </CardContent>
@@ -121,7 +121,7 @@ function Events() {
                 <Typography gutterBottom variant="h5" component="div" sx={{fontFamily:'cursive'}}>
                     <b>Business Events</b>
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography variant="body" color="text.secondary">
                 Plan your Professional Gatherings with us.
                 From Meetings to Conferences and Seminars to Webinars.
                 </Typography>

@@ -24,7 +24,7 @@
 
  .lo h3{
     font-size: 50px;
-    font-family:'STXihei';;
+    font-family:'STXihei';
     background-color: rgb(232, 255, 247);
     height: 100%;
  }
@@ -32,4 +32,20 @@
  .but{
     color: rgb(109, 188, 109);
  }
+/*
+ .lo {
+     position: absolute;
+        height: 100%;
+        width: 100%;
+        
+       background: url('https://images.unsplash.com/photo-1432821596592-e2c18b78144f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bG9naW58ZW58MHx8MHx8&w=1000&q=80');
+       background-size: cover;
+    
+ }
+.log{
+    background-color: aqua;
+    position: absolute;
+   top: 50px;
+}
 
+ */
