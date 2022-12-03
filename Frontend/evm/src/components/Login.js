@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-
+import '../css/login.css'
+import Button from '@mui/material/Button';
 export default class Login extends Component {
   constructor(props) {
     super(props);
@@ -32,18 +33,22 @@ export default class Login extends Component {
         if (data.status == "ok") {
           alert("login successful");
           window.localStorage.setItem("token", data.data);
-          window.location.href = "/mhome";
+          window.location.href = "/mslider";
+        }
+        else
+        {
+          alert("Enter Valid Credentials")
         }
       });
   }
   render() {
     return (
-      
+      <div className="lo">
       <form onSubmit={this.handleSubmit}>
-        <h3>Sign In</h3>
+        <h3>Log In</h3>
 
-        <div className="mb-3">
-          <label>Email address</label>&nbsp;&nbsp;&nbsp;&nbsp;
+        <div className="em">
+          <label>Email</label>
           <input
             type="email"
             className="form-control" 
@@ -52,8 +57,8 @@ export default class Login extends Component {
           />
         </div>
 
-        <div className="mb-3">
-          <label>Password</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div className="pas">
+          <label>Password</label>
           <input
             type="password"
             className="form-control"
@@ -61,26 +66,17 @@ export default class Login extends Component {
             onChange={(e) => this.setState({ password: e.target.value })}
           />
         </div>
-
-        <div className="mb-3">
-          <div className="custom-control custom-checkbox">
-            <input
-              type="checkbox"
-              className="custom-control-input"
-              id="customCheck1"
-            />
-          </div>
-        </div>
-        <div className="d-grid">
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <div className="bu">
+       
           <button type="submit" className="btn btn-primary">
             Submit
           </button>
         </div>
         <p className="forgot-password text-right">
-          <a href="/Signup">Sign Up</a>
+          <Button><a href="/Signup">Sign Up</a></Button>
         </p>
       </form>
-    );
-  }
+      </div>
+  );
+  }
 }

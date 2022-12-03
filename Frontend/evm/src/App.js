@@ -18,6 +18,7 @@ import EMSignup from './EP/EMSignup'
 import EMLogin from './EP/EMLogin'
 import Selection1 from './components/Selection1';
 import EPDashboard from './EP/EPDashboard';
+import Slider from './components/Slider'
 function App() {
   return (
     <>
@@ -42,6 +43,7 @@ function App() {
             <Route path="/EMLogin" element={<EMLogin/>}></Route>
             <Route path="/EMSignup" element={<EMSignup/>}></Route>
             <Route path="/EPDashboard" element={<EPDashboard/>}></Route>
+            <Route path="/mslider" element={<Slider/>}></Route>
           </Routes>
         </BrowserRouter>
       </div>
