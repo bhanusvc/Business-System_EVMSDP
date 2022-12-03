@@ -15,7 +15,7 @@ const JWT_SECRET =
   "hvdvay6ert72839289()aiyg8t87qt72393293883uhefiuh78ttq3ifi78272jbkj?[]]pou89ywe";
 
 const mongoUrl =
-    "mongodb+srv://rohit:rohit@cluster0.wfuvibh.mongodb.net/EVM?retryWrites=true&w=majority";
+  "mongodb+srv://bhanusvc:bhanusatya@cluster0.d64qrrz.mongodb.net/?retryWrites=true&w=majority";
 
 mongoose
   .connect(mongoUrl, {
@@ -26,7 +26,7 @@ mongoose
   })
   .catch((e) => console.log(e));
 
-require("./models/userDetails");
+require("./model/userDetails");
 
 const User = mongoose.model("UserInfo");
 app.post("/register", async (req, res) => {
@@ -51,7 +51,7 @@ app.post("/register", async (req, res) => {
   }
 });
 
-app.post("/Login", async (req, res) => {
+app.post("/login-user", async (req, res) => {
   const { email, password } = req.body;
 
   const user = await User.findOne({ email });
@@ -67,7 +67,7 @@ app.post("/Login", async (req, res) => {
       return res.json({ error: "error" });
     }
   }
-  res.json({ status: "error", error: "Invalid Password" });
+  res.json({ status: "error", error: "InvAlid Password" });
 });
 
 app.post("/userData", async (req, res) => {
@@ -173,6 +173,6 @@ app.post("/reset-password/:id/:token", async (req, res) => {
     res.render("index", { email: verify.email, status: "verified" });
   } catch (error) {
     console.log(error);
-    res.json({ status: "Something Went Wrong" });
-}
+    res.json({ status: "Something Went Wrong" });
+  }
 });

@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import '../css/login.css'
-import { Button } from "@mui/material";
+
 export default class Login extends Component {
   constructor(props) {
     super(props);
@@ -30,7 +29,7 @@ export default class Login extends Component {
       .then((res) => res.json())
       .then((data) => {
         console.log(data, "userRegister");
-        if (data.status === "ok") {
+        if (data.status == "ok") {
           alert("login successful");
           window.localStorage.setItem("token", data.data);
           window.location.href = "/mhome";
@@ -39,21 +38,22 @@ export default class Login extends Component {
   }
   render() {
     return (
-      <div className="lo">
+      
       <form onSubmit={this.handleSubmit}>
-        <h3>Log In</h3>
-        <div className="em">
-          <label>Email </label>
+        <h3>Sign In</h3>
+
+        <div className="mb-3">
+          <label>Email address</label>&nbsp;&nbsp;&nbsp;&nbsp;
           <input
             type="email"
-            className="form-control"
+            className="form-control" 
             placeholder="Enter email"
             onChange={(e) => this.setState({ email: e.target.value })}
           />
         </div>
 
-        <div className="pas">
-          <label>Password</label>
+        <div className="mb-3">
+          <label>Password</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <input
             type="password"
             className="form-control"
@@ -61,14 +61,26 @@ export default class Login extends Component {
             onChange={(e) => this.setState({ password: e.target.value })}
           />
         </div>
-        <div className="but">
-          <Button type="submit" variant="outlined" >
-              Submit
-            </Button>
-            <Button variant="oulined" href="/Signup">Sign Up</Button>
+
+        <div className="mb-3">
+          <div className="custom-control custom-checkbox">
+            <input
+              type="checkbox"
+              className="custom-control-input"
+              id="customCheck1"
+            />
+          </div>
         </div>
+        <div className="d-grid">
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          <button type="submit" className="btn btn-primary">
+            Submit
+          </button>
+        </div>
+        <p className="forgot-password text-right">
+          <a href="/Signup">Sign Up</a>
+        </p>
       </form>
-      </div>
-);
-}
+    );
+  }
 }

@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import '../css/signup.css'
-import { Button } from "@mui/material";
+
 export default class SignUp extends Component {
   constructor(props) {
     super(props);
@@ -38,12 +37,11 @@ export default class SignUp extends Component {
   }
   render() {
     return (
-      <div className="si">
       <form onSubmit={this.handleSubmit}>
         <h3>Sign Up</h3>
 
         <div className="mb-3">
-          <label>First name</label>
+          <label>First name</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <input
             type="text"
             className="form-control"
@@ -53,7 +51,7 @@ export default class SignUp extends Component {
         </div>
 
         <div className="mb-3">
-          <label>Last name</label>
+          <label>Last name</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <input
             type="text"
             className="form-control"
@@ -63,7 +61,7 @@ export default class SignUp extends Component {
         </div>
 
         <div className="mb-3">
-          <label>Email address</label>
+          <label>Email address</label>&nbsp;&nbsp;
           <input
             type="email"
             className="form-control"
@@ -73,7 +71,7 @@ export default class SignUp extends Component {
         </div>
 
         <div className="mb-3">
-          <label>Password</label>
+          <label>Password</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <input
             type="password"
             className="form-control"
@@ -83,15 +81,15 @@ export default class SignUp extends Component {
         </div>
 
         <div className="d-grid">
-          <Button type="submit" className="btn btn-primary" variant="filled">
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          <button type="submit" className="btn btn-primary">
             Sign Up
-          </Button>
+          </button>
         </div>
         <p className="forgot-password text-right">
-          Already registered ?<a href="/Login" >Log In</a>
+          Already registered <a href="/Login">sign in?</a>
         </p>
       </form>
-      </div>
-    );
-  }
+    );
+  }
 }
