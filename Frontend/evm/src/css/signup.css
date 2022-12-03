@@ -1,7 +1,6 @@
 .si {
-    background: rgb(147,255,68);
+
     position: absolute;
     height: 100%;
     width: 100%;
-background: linear-gradient(90deg, rgba(147,255,68,1) 5%, rgba(246,244,246,1) 29%, rgba(74,173,217,1) 47%, rgba(255,255,255,1) 65%, rgba(245,168,74,1) 95%);
 }

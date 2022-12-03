@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import '../index.css'
 import { Button } from "@mui/material";
-import './login.css'
 export default class Login extends Component {
   constructor(props) {
     super(props);

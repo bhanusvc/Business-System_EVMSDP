@@ -33,40 +33,7 @@ const MHome = () => {
     </div>
     <br></br>
     <br></br>
-    <div className='Info'>
-    <Typography
-              
-              variant="h3"
-              align="center"
-              color="text.primary"
-              gutterBottom
-              fontFamily="STXihei"
-            >
-              <b>What is EVM ?</b>
-            </Typography>
-            <Typography variant="h5" align="center" color="text.secondary" paragraph fontStyle="italic">
-            An Event Management System is nothing but making events at a certain period with or without
-             the involvement of entertainment to satisfy the clients according to their demands.
-A truly comprehensive event management system will allow users and organizers 
-to access and manage all aspects of an event, including registration, marketing, engagement, 
-integrations, physical planning and preparation, reporting and analytics.
-            </Typography>
-
-            <br></br>
-            <br></br>
-            <Typography
-              
-              variant="h3"
-              align="center"
-              color="text.primary"
-              gutterBottom
-              fontFamily="STXihei"
-            >
-              <b>Why EVM ?</b>
-            </Typography>
-            <Typography variant="h5" align="center" color="text.secondary" paragraph fontStyle="italic">
-            An Event Management System will happen after making a complete decision on how we need to process the work according to the user's requirement. Event managers will plan the entire activity and after receiving the fund they will decide what things we need to include according to the budget. As it is about the business it highly consists of both Profit and Loss depending on the circumstances. It covers various aspects of planning an event.
-            </Typography>
+    <div className='Info'>          
             <Typography
               variant="h3"
               align="center"
@@ -74,12 +41,12 @@ integrations, physical planning and preparation, reporting and analytics.
               gutterBottom
               fontFamily="STXihei"
             >
-              <b>Provisions by EVM</b>
+              <b> Our Provisions</b>
             </Typography>
             <Typography variant="h5" align="center" color="text.secondary" paragraph fontStyle="italic">
             {'>>'} Hiring of Service Staff<br></br>
-            {'>>'} Contract Negotiation<br></br>
-            {'>>'} Minimize administration efforts<br></br>
+            {'>>'} Contract Negotiations<br></br>
+            {'>>'} Minimizing administration efforts<br></br>
             {'>>'} Obtaining Permits<br></br>
             {'>>'} Marketing & Advertising<br></br>
             {'>>'} Ongoing Supporting Team<br></br>

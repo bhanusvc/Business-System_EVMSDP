@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import '../EP/login.css'
+import '../css/login.css'
 import { Button } from "@mui/material";
 export default class Login extends Component {
   constructor(props) {
@@ -39,12 +39,11 @@ export default class Login extends Component {
   }
   render() {
     return (
+      <div className="lo">
       <form onSubmit={this.handleSubmit}>
-        <div className="bg"></div>
-        <div className="log">
         <h3>Log In</h3>
-        <div className="mb-3">
-          <label>Email address</label>
+        <div className="em">
+          <label>Email </label>
           <input
             type="email"
             className="form-control"
@@ -53,7 +52,7 @@ export default class Login extends Component {
           />
         </div>
 
-        <div className="mb-3">
+        <div className="pas">
           <label>Password</label>
           <input
             type="password"
@@ -62,15 +61,14 @@ export default class Login extends Component {
             onChange={(e) => this.setState({ password: e.target.value })}
           />
         </div>
-        <Button type="submit" variant="contained"  className="btn" fontSize="large">
-            Submit
-          </Button>
-        <br/>
-        <br/>
-          <Button variant="contained" fontSize="small" href="/Signup">Sign Up</Button>
-        
+        <div className="but">
+          <Button type="submit" variant="outlined" >
+              Submit
+            </Button>
+            <Button variant="oulined" href="/Signup">Sign Up</Button>
         </div>
       </form>
+      </div>
 );
 }
 }
