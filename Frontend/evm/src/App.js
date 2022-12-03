@@ -14,11 +14,9 @@ import Contact from './pages/Contact';
 import About from './pages/About';
 import Info from './pages/Info';
 import Forgot from './pages/Forgot';
-import AdminLog from './Admin/AdminLog'
 import EMSignup from './EP/EMSignup'
 import EMLogin from './EP/EMLogin'
 import Selection1 from './components/Selection1';
-import AdDashboard from './Admin/AdDashboard';
 import EPDashboard from './EP/EPDashboard';
 function App() {
   return (
@@ -41,10 +39,8 @@ function App() {
             <Route path="/BusinessEvents" element={<BusinessEvents/>}></Route>
             <Route path="/info" element={<Info/>}></Route>
             <Route path="/Selection1" element={<Selection1/>}></Route>
-            <Route path="/AdminLogin" element={<AdminLog/>}></Route>
             <Route path="/EMLogin" element={<EMLogin/>}></Route>
             <Route path="/EMSignup" element={<EMSignup/>}></Route>
-            <Route path="/AdDashboard" element={<AdDashboard/>}></Route>
             <Route path="/EPDashboard" element={<EPDashboard/>}></Route>
           </Routes>
         </BrowserRouter>

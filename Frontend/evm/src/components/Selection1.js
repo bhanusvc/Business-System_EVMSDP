@@ -4,11 +4,12 @@ import '../css/Sele.css'
 function Selection1() {
   return (
     <div className='ACMbody'>
-
-      <div className='Buttons'>
-        <Button href="/AdminLogin" variant='filled' sx={{fontFamily:'STXihei', fontSize:'40px',fontWeight:'bold',border: '2px solid #111', borderRadius:'10px',margin:'30px'}}>ADMIN</Button>&nbsp;&nbsp;
-        <Button href="/Login" variant='filled' sx={{fontFamily:'STXihei', fontSize:'40px',fontWeight:'bold',border: '2px solid #111',  borderRadius:'10px',margin:'30px'}}>CLIENT</Button>&nbsp;&nbsp;
-        <Button href="/EMLogin" variant='content' sx={{fontFamily:'STXihei', fontSize:'40px',  fontWeight:'bold',border: '2px solid #111',borderRadius:'10px',margin:'30px'}}>EVENT MANAGER</Button>
+        <h2>Your Role 🧐</h2>
+      <div className='b1'>
+        <Button href="/Login" variant='filled' sx={{fontFamily:'STXihei', fontSize:'30px',fontWeight:'bold',border: '3px solid ',  borderRadius:'10px',margin:'30px'}}>Customer</Button>&nbsp;&nbsp;
+        </div>
+        <div className='b2'>
+        <Button href="/EMLogin" variant='filled' sx={{fontFamily:'STXihei', fontSize:'30px',  fontWeight:'bold',border: '3px solid ',borderRadius:'10px',margin:'30px'}}>Event Manager</Button>
     
       </div>
 

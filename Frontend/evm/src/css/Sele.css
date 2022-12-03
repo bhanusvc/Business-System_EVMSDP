@@ -1,17 +1,25 @@
-.ACMbody{
-    background-image:url(bk.jpg);
-    backface-visibility: visible;
-    height: 710px;
+ .ACMbody{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(182, 235, 248);
+ }
+.ACMbody h2{
+  font-size: 50px;
+  font-family:'STXihei'
+  
 }
 
-.Buttons{
-    color: rgb(84, 218, 255);
-  text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 25px rgb(194, 100, 199), 0 0 5px rgb(222, 206, 104);
-    position: relative;
-    top: 200px;
-    justify-content: center;
-    flex-direction: row;
-    
+.b1:hover {
+
+  color: rgb(109, 188, 109);
+  transform: scale(1.0) translateY(-4px);
+  transition: 0.3s;
 }
 
-
+.b2:hover {
+ 
+  color: rgb(109, 188, 109);
+  transform: scale(1.0) translateY(-4px);
+  transition: 0.1s;
+}
