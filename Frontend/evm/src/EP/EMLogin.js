@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import '../css/login.css'
-import '../index.css'
 import Button from '@mui/material/Button';
 export default class Login extends Component {
   constructor(props) {
@@ -36,49 +35,49 @@ export default class Login extends Component {
           window.localStorage.setItem("token", data.data);
           window.location.href = "/mslider";
         }
-        else {
+        else
+        {
           alert("Enter Valid Credentials")
         }
       });
   }
   render() {
     return (
-      <div className="lo">
-        <form onSubmit={this.handleSubmit}>
-         
-            <h3 className="log">Log In</h3>
+      <form onSubmit={this.handleSubmit}>
+          <div className="log"></div>
+        <div className="lo">
+        <h2>Log In</h2>
 
+        <div className="em">
+          <label>Email</label>
+          <input
+            type="email"
+            className="form-control1" 
+            placeholder="Enter email"
+            onChange={(e) => this.setState({ email: e.target.value })}
+          />
+        </div>
 
-            <label  className="log">Email</label>
-            <input  className="log"
-              type="email"
-             
-              placeholder="Enter email"
-              onChange={(e) => this.setState({ email: e.target.value })}
-            />
-
-
-
-            <label  className="log">Password</label>
-            <input
-              type="password"
-              className="form-control"
-              placeholder="Enter password"
-              onChange={(e) => this.setState({ password: e.target.value })}
-            />
-
-
-
-            <button type="submit"  className="log">
-              Submit
-            </button>
-
-            <p className="forgot-password text-right">
-              <Button variant="contained"><a href="/Signup">Sign Up</a></Button>
-            </p>
-          
-        </form>
+        <div className="em">
+          <label>Password</label>
+          <input
+            type="password"
+            className="form-control1"
+            placeholder="Enter password"
+            onChange={(e) => this.setState({ password: e.target.value })}
+          />
+        </div>
+     
+       
+          <Button variant="contained" type="submit" id="x" className="btn btn-primary">
+            Submit
+          </Button>
+     
+        <p className="forgot">
+          <Button variant="contained"><a href="/Signup">Sign Up</a></Button>
+        </p>
       </div>
-    );
+      </form>
+  );
   }
 }

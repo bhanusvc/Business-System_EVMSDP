@@ -5,8 +5,9 @@ const dataSlider = [
   {
     id: uuidv4(),
     title: "Ceremonies",
-    subTitle: "The phrase the honor of your presence is requested is typically reserved for ceremonies taking place at a house of worship, (temple, church, synagogue, other places of worship). The phrase you are invited to atten is typically used for ceremonies not taking place in religious setting.",
-    button:<Button variant='contained' href='/Ceremonies' >eXplore</Button>
+    subTitle: "The phrase the honor of your presence is requested is typically reserved for ceremonies taking place at a house of worship, (temple, church, synagogue, other places of worship).",
+    button:<Button variant='contained' href='/Ceremonies' >eXplore</Button>,
+    
   },
   {
     id: uuidv4(),

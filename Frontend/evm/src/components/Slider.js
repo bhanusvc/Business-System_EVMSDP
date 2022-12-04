@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import '../css/Slider.css'
+import Button from '@mui/material/Button';
 import BtnSlider from './Slider/BtnSlider'
 import dataSlider from './Slider/dataSlider'
 
@@ -59,7 +60,7 @@ export default function Slider() {
             })}
             <BtnSlider moveSlide={nextSlide} direction={"next"} />
             <BtnSlider moveSlide={prevSlide} direction={"prev"} />
-
+            <Button variant='contained' href='/' sx={{position:'absolute',right:'50%',bottom:'20%'}} >Start</Button>
 
 
        </div>
