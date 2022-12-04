@@ -12,8 +12,9 @@ import Ceremonies from './pages/Ceremonies'
 import BusinessEvents from './pages/BusinessEvents';
 import Contact from './pages/Contact';
 import About from './pages/About';
-import Info from './pages/Info';
+import Pay from './pages/Pay';
 import Forgot from './pages/Forgot';
+import Booking from './pages/Booking';
 import EMSignup from './EP/EMSignup'
 import EMLogin from './EP/EMLogin'
 import Selection1 from './components/Selection1';
@@ -38,12 +39,13 @@ function App() {
             <Route path="/Celebrations" element={<Celebrations/>}></Route>
             <Route path="/Ceremonies" element={<Ceremonies/>}></Route>
             <Route path="/BusinessEvents" element={<BusinessEvents/>}></Route>
-            <Route path="/info" element={<Info/>}></Route>
             <Route path="/Selection1" element={<Selection1/>}></Route>
             <Route path="/EMLogin" element={<EMLogin/>}></Route>
             <Route path="/EMSignup" element={<EMSignup/>}></Route>
             <Route path="/EPDashboard" element={<EPDashboard/>}></Route>
             <Route path="/mslider" element={<Slider/>}></Route>
+            <Route path="/Booking" element={<Booking/>}></Route>
+            <Route path="/pay" element={<Pay/>}></Route>
           </Routes>
         </BrowserRouter>
       </div>

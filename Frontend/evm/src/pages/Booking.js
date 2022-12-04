@@ -6,12 +6,18 @@ function Booking() {
   return (
     <>
     <div>
+      <div>
         <Navbar/>
+      </div>
+      <div>
         <h3><b>Name</b></h3> <TextField  variant="outlined" />
+      </div>
+      <div>
         <Footer/>
+      </div>
     </div>
     </>
   )
 }
 
-export default Info
+export default Booking

@@ -87,7 +87,7 @@ export default function Ceremonies() {
                 </CardContent>
             </CardActionArea>
             <CardActions>
-                <Button size="small" a color="primary" href="/Contact" variant='contained' >
+                <Button size="small" a color="primary" href="/Booking" variant='contained' >
                 View Details
                 </Button>
             </CardActions>
@@ -114,7 +114,7 @@ export default function Ceremonies() {
                 </CardContent>
             </CardActionArea>
             <CardActions>
-                <Button size="small" a color="primary" href="/Contact" variant='contained' >
+                <Button size="small" a color="primary" href="/Booking" variant='contained' >
                 View Details
                 </Button>
             </CardActions>
@@ -141,7 +141,7 @@ export default function Ceremonies() {
                 </CardContent>
             </CardActionArea>
             <CardActions>
-                <Button size="small" a color="primary" href="/Contact" variant='contained' >
+                <Button size="small" a color="primary" href="/Booking" variant='contained' >
                 View Details
                 </Button>
             </CardActions>
@@ -168,7 +168,7 @@ export default function Ceremonies() {
                 </CardContent>
             </CardActionArea>
             <CardActions>
-                <Button size="small" a color="primary" href="/Contact" variant='contained' >
+                <Button size="small" a color="primary" href="/Booking" variant='contained' >
                 View Details
                 </Button>
             </CardActions>
@@ -195,7 +195,7 @@ export default function Ceremonies() {
                 </CardContent>
             </CardActionArea>
             <CardActions>
-                <Button size="small" a color="primary" href="/Contact" variant='contained' >
+                <Button size="small" a color="primary" href="/Booking" variant='contained' >
                 View Details
                 </Button>
             </CardActions>
@@ -222,7 +222,7 @@ export default function Ceremonies() {
                 </CardContent>
             </CardActionArea>
             <CardActions>
-                <Button size="small" a color="primary" href="/Contact" variant='contained' >
+                <Button size="small" a color="primary" href="/Booking" variant='contained' >
                 View Details
                 </Button>
             </CardActions>
@@ -249,7 +249,7 @@ export default function Ceremonies() {
                 </CardContent>
             </CardActionArea>
             <CardActions>
-                <Button size="small" a color="primary" href="/Contact" variant='contained'>
+                <Button size="small" a color="primary" href="/Booking" variant='contained'>
                 View Details
                 </Button>
             </CardActions>
@@ -276,7 +276,7 @@ export default function Ceremonies() {
                 </CardContent>
             </CardActionArea>
             <CardActions>
-                <Button size="small" a color="primary" href="/Contact" variant='contained'>
+                <Button size="small" a color="primary" href="/Booking" variant='contained'>
                 View Details
                 </Button>
             </CardActions>
@@ -303,7 +303,7 @@ export default function Ceremonies() {
                 </CardContent>
             </CardActionArea>
             <CardActions>
-                <Button size="small" a color="primary" href="/Contact" variant='contained' >
+                <Button size="small" a color="primary" href="/Booking" variant='contained' >
                 View Details
                 </Button>
             </CardActions>

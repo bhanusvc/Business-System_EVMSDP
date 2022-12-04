@@ -56,7 +56,7 @@ export default function BusinessEvents() {
               <Button  href="/Celebrations" ><WestRoundedIcon sx={{ fontSize: 40 }}></WestRoundedIcon>&nbsp;<h2>Celebrations</h2></Button>
               &nbsp;
               &nbsp;
-              <Button  href="/Contact" >&nbsp;<h2>Not Here!<br></br>Contact Us</h2><EastRoundedIcon sx={{ fontSize: 40 }}></EastRoundedIcon></Button>
+              <Button  href="/Booking" >&nbsp;<h2>Not Here!<br></br>Contact Us</h2><EastRoundedIcon sx={{ fontSize: 40 }}></EastRoundedIcon></Button>
             </Stack>
           </Container>
         </Box>
@@ -87,7 +87,7 @@ export default function BusinessEvents() {
                 </CardContent>
             </CardActionArea>
             <CardActions>
-                <Button size="small" a color="primary" href="/Contact" variant='contained' >
+                <Button size="small" a color="primary" href="/Booking" variant='contained' >
                 View Details
                 </Button>
             </CardActions>
@@ -114,7 +114,7 @@ export default function BusinessEvents() {
                 </CardContent>
             </CardActionArea>
             <CardActions>
-                <Button size="small" a color="primary" href="/Contact" variant='contained' >
+                <Button size="small" a color="primary" href="/Booking" variant='contained' >
                 View Details
                 </Button>
             </CardActions>
@@ -141,7 +141,7 @@ export default function BusinessEvents() {
                 </CardContent>
             </CardActionArea>
             <CardActions>
-                <Button size="small" a color="primary" href="/Contact" variant='contained' >
+                <Button size="small" a color="primary" href="/Booking" variant='contained' >
                 View Details
                 </Button>
             </CardActions>
@@ -168,7 +168,7 @@ export default function BusinessEvents() {
                 </CardContent>
             </CardActionArea>
             <CardActions>
-                <Button size="small" a color="primary" href="/Contact" variant='contained' >
+                <Button size="small" a color="primary" href="/Booking" variant='contained' >
                 View Details
                 </Button>
             </CardActions>
@@ -195,7 +195,7 @@ export default function BusinessEvents() {
                 </CardContent>
             </CardActionArea>
             <CardActions>
-                <Button size="small" a color="primary" href="/Contact" variant='contained' >
+                <Button size="small" a color="primary" href="/Booking" variant='contained' >
                 View Details
                 </Button>
             </CardActions>
@@ -222,7 +222,7 @@ export default function BusinessEvents() {
                 </CardContent>
             </CardActionArea>
             <CardActions>
-                <Button size="small" a color="primary" href="/Contact" variant='contained' >
+                <Button size="small" a color="primary" href="/Booking" variant='contained' >
                 View Details
                 </Button>
             </CardActions>
