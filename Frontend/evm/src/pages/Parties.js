@@ -82,7 +82,8 @@ export default function Ceremonies() {
                 </Typography>
                 <Typography variant="body2" color="text.secondary" fontStyle="italic" fontFamily="STXihei">
                 Plan your ceremonies in a unified ritualistic way with us. 
-                Explore more 
+                <br/>
+                <b>Adv Amount : ₹10000</b> 
                 </Typography>
                 <br></br>
                 </CardContent>
@@ -109,7 +110,8 @@ export default function Ceremonies() {
                 </Typography>
                 <Typography variant="body2" color="text.secondary" fontStyle="italic" fontFamily="STXihei">
                 Plan your ceremonies in a unified ritualistic way with us. 
-                Explore more 
+                <br/>
+                <b>Adv Amount : ₹10000</b> 
                 </Typography>
                 <br></br>
                 </CardContent>
@@ -136,7 +138,8 @@ export default function Ceremonies() {
                 </Typography>
                 <Typography variant="body2" color="text.secondary" fontStyle="italic" fontFamily="STXihei">
                 Plan your ceremonies in a unified ritualistic way with us. 
-                Explore more 
+                <br/>
+                <b>Adv Amount : ₹10000</b> 
                 </Typography>
                 <br></br>
                 </CardContent>
@@ -163,7 +166,8 @@ export default function Ceremonies() {
                 </Typography>
                 <Typography variant="body2" color="text.secondary" fontStyle="italic" fontFamily="STXihei">
                 Plan your ceremonies in a unified ritualistic way with us. 
-                Explore more 
+                <br/>
+                <b>Adv Amount : ₹10000</b> 
                 </Typography>
                 <br></br>
                 </CardContent>
@@ -190,7 +194,8 @@ export default function Ceremonies() {
                 </Typography>
                 <Typography variant="body2" color="text.secondary" fontStyle="italic" fontFamily="STXihei">
                 Plan your ceremonies in a unified ritualistic way with us. 
-                Explore more 
+                <br/>
+                <b>Adv Amount : ₹10000</b> 
                 </Typography>
                 <br></br>
                 </CardContent>
@@ -217,7 +222,8 @@ export default function Ceremonies() {
                 </Typography>
                 <Typography variant="body2" color="text.secondary" fontStyle="italic" fontFamily="STXihei">
                 Plan your ceremonies in a unified ritualistic way with us. 
-                Explore more 
+                <br/>
+                <b>Adv Amount : ₹10000</b> 
                 </Typography>
                 <br></br>
                 </CardContent>
