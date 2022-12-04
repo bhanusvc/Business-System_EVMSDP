@@ -21,6 +21,9 @@
   "@mui/material": "^5.10.16",
   
     
+  "@mui/x-date-pickers": "^5.0.9",
+  
+    
   "@testing-library/jest-dom": "^5.16.5",
   
     
@@ -34,6 +37,9 @@
   
     
   "bootstrap": "^5.2.3",
+  
+    
+  "dayjs": "^1.11.6",
   
     
   "react": "^18.2.0",

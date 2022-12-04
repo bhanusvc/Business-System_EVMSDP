@@ -56,7 +56,7 @@ export default function BusinessEvents() {
               <Button  href="/Celebrations" ><WestRoundedIcon sx={{ fontSize: 40 }}></WestRoundedIcon>&nbsp;<h2>Celebrations</h2></Button>
               &nbsp;
               &nbsp;
-              <Button  href="/Booking" >&nbsp;<h2>Not Here!<br></br>Contact Us</h2><EastRoundedIcon sx={{ fontSize: 40 }}></EastRoundedIcon></Button>
+              <Button  href="/Booking" >&nbsp;<h2>Contact Us</h2><EastRoundedIcon sx={{ fontSize: 40 }}></EastRoundedIcon></Button>
             </Stack>
           </Container>
         </Box>
@@ -81,7 +81,8 @@ export default function BusinessEvents() {
                 </Typography>
                 <Typography variant="body2" color="text.secondary" fontStyle="italic" fontFamily="STXihei">
                 Plan your ceremonies in a unified ritualistic way with us. 
-                Explore more 
+                <br/>
+                <b>Adv Amount : ₹10000</b>
                 </Typography>
                 <br></br>
                 </CardContent>
@@ -108,7 +109,8 @@ export default function BusinessEvents() {
                 </Typography>
                 <Typography variant="body2" color="text.secondary" fontStyle="italic" fontFamily="STXihei">
                 Plan your ceremonies in a unified ritualistic way with us. 
-                Explore more 
+                <br/>
+                <b>Adv Amount : ₹10000</b>
                 </Typography>
                 <br></br>
                 </CardContent>
@@ -135,7 +137,8 @@ export default function BusinessEvents() {
                 </Typography>
                 <Typography variant="body2" color="text.secondary" fontStyle="italic" fontFamily="STXihei">
                 Plan your ceremonies in a unified ritualistic way with us. 
-                Explore more 
+                <br/>
+                <b>Adv Amount : ₹10000</b>
                 </Typography>
                 <br></br>
                 </CardContent>
@@ -162,7 +165,8 @@ export default function BusinessEvents() {
                 </Typography>
                 <Typography variant="body2" color="text.secondary" fontStyle="italic" fontFamily="STXihei">
                 Plan your ceremonies in a unified ritualistic way with us. 
-                Explore more 
+                <br/>
+                <b>Adv Amount : ₹10000</b>
                 </Typography>
                 <br></br>
                 </CardContent>
@@ -189,7 +193,8 @@ export default function BusinessEvents() {
                 </Typography>
                 <Typography variant="body2" color="text.secondary" fontStyle="italic" fontFamily="STXihei">
                 Plan your ceremonies in a unified ritualistic way with us. 
-                Explore more 
+                <br/>
+                <b>Adv Amount : ₹10000</b>
                 </Typography>
                 <br></br>
                 </CardContent>
@@ -216,7 +221,8 @@ export default function BusinessEvents() {
                 </Typography>
                 <Typography variant="body2" color="text.secondary" fontStyle="italic" fontFamily="STXihei">
                 Plan your ceremonies in a unified ritualistic way with us. 
-                Explore more 
+                <br/>
+                <b>Adv Amount : ₹10000</b> 
                 </Typography>
                 <br></br>
                 </CardContent>

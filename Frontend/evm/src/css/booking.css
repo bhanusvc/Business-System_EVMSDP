@@ -1,0 +1,9 @@
+.te{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    left: 40%;
+    width: 300px;
+}
