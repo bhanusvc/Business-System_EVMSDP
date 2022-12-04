@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import '../css/signup.css'
 export default class SignUp extends Component {
   constructor(props) {
     super(props);
@@ -38,8 +38,9 @@ export default class SignUp extends Component {
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
-        <h3>Sign Up</h3>
-
+        <div className="back"></div>
+        <div className="si">
+        <h2>Sign Up</h2>
         <div className="mb-3">
           <label>First name</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <input
@@ -80,15 +81,17 @@ export default class SignUp extends Component {
           />
         </div>
 
-        <div className="d-grid">
+        <div className="">
         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-          <button type="submit" className="btn btn-primary">
+          <button type="submit" className="btn-primary1" id='he'>
             Sign Up
           </button>
         </div>
-        <p className="forgot-password text-right">
+        <p className="forgot-password">
           Already registered <a href="/Login">sign in?</a>
         </p>
+        
+      </div>
       </form>
     );
   }

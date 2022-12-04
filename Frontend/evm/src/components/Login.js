@@ -43,40 +43,41 @@ export default class Login extends Component {
   }
   render() {
     return (
-      <div className="lo">
       <form onSubmit={this.handleSubmit}>
-        <h3>Log In</h3>
+          <div className="log"></div>
+        <div className="lo">
+        <h2>Log In</h2>
 
         <div className="em">
           <label>Email</label>
           <input
             type="email"
-            className="form-control" 
+            className="form-control1" 
             placeholder="Enter email"
             onChange={(e) => this.setState({ email: e.target.value })}
           />
         </div>
 
-        <div className="pas">
+        <div className="em">
           <label>Password</label>
           <input
             type="password"
-            className="form-control"
+            className="form-control1"
             placeholder="Enter password"
             onChange={(e) => this.setState({ password: e.target.value })}
           />
         </div>
-        <div className="bu">
+     
        
-          <button type="submit" className="btn btn-primary">
+          <Button variant="contained" type="submit" id="x" className="btn btn-primary">
             Submit
-          </button>
-        </div>
-        <p className="forgot-password text-right">
-          <Button><a href="/Signup">Sign Up</a></Button>
+          </Button>
+     
+        <p className="forgot">
+          <Button variant="contained"><a href="/Signup">Sign Up</a></Button>
         </p>
-      </form>
       </div>
+      </form>
   );
   }
 }
